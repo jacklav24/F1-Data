@@ -1,0 +1,67 @@
+year,points,team,nation
+2023,503,Red Bull,Austrian
+2022,759,Red Bull,Austrian
+2021,613.5,Mercedes,German
+2020,573,Mercedes,German
+2019,739,Mercedes,German
+2018,655,Mercedes,German
+2017,668,Mercedes,German
+2016,765,Mercedes,German
+2015,703,Mercedes,German
+2014,701,Mercedes,German
+2013,596,Red Bull,Austrian
+2012,460,Red Bull,Austrian
+2011,650,Red Bull,Austrian
+2010,498,Red Bull,Austrian
+2009,172,Brawn,British
+2008,172,Ferrari,Italian
+2007,218,McLaren,British
+2006,206,Renault,French
+2005,191,Renault,French
+2004,262,Ferrari,Italian
+2003,158,Ferrari,Italian
+2002,221,Ferrari,Italian
+2001,179,Ferrari,Italian
+2000,170,Ferrari,Italian
+1999,128,Ferrari,Italian
+1998,156,McLaren,British
+1997,123,Williams,British
+1996,175,Williams,British
+1995,147,Benetton,Italian
+1994,118,Williams,British
+1993,168,Williams,British
+1992,164,Williams,British
+1991,139,McLaren,British
+1990,121,McLaren,British
+1989,141,McLaren,British
+1988,199,McLaren,British
+1987,137,Williams,British
+1986,141,Williams,British
+1985,90,McLaren,British
+1984,143.5,McLaren,British
+1983,89,Ferrari,Italian
+1982,74,Ferrari,Italian
+1981,95,Williams,British
+1980,120,Williams,British
+1979,113,Ferrari,Italian
+1978,86,Team Lotus,British
+1977,95,Ferrari,Italian
+1976,83,Ferrari,Italian
+1975,72.5,Ferrari,Italian
+1974,73,McLaren,British
+1973,92,Team Lotus,British
+1972,61,Team Lotus,British
+1971,73,Tyrrell,British
+1970,59,Team Lotus,British
+1969,66,Matra-Ford,French
+1968,62,Lotus-Ford,British
+1967,63,Brabham-Repco,British
+1966,42,Brabham-Repco,British
+1965,54,Lotus-Climax,British
+1964,45,Ferrari,Italian
+1963,54,Lotus-Climax,British
+1962,42,BRM,British
+1961,45,Ferrari,Italian
+1960,48,Cooper-Climax,British
+1959,40,Cooper-Climax,British
+1958,48,Vanwall,British
