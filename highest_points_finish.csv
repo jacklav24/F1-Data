@@ -1,0 +1,160 @@
+constructorId,teamName,nationality,highest_season_points
+1,McLaren,British,497.0
+2,BMW Sauber,German,135.0
+3,Williams,British,320.0
+4,Renault,French,206.0
+5,Toro Rosso,Italian,85.0
+6,Ferrari,Italian,571.0
+7,Toyota,Japanese,88.0
+8,Super Aguri,Japanese,4.0
+9,Red Bull,Austrian,759.0
+10,Force India,Indian,187.0
+11,Honda,Japanese,86.0
+12,Spyker,Dutch,1.0
+13,MF1,Russian,0.0
+14,Spyker MF1,Dutch,0.0
+15,Sauber,Swiss,126.0
+16,BAR,British,119.0
+17,Jordan,Irish,61.0
+18,Minardi,Italian,7.0
+19,Jaguar,British,18.0
+20,Prost,French,21.0
+21,Arrows,British,23.0
+22,Benetton,Italian,147.0
+23,Brawn,British,172.0
+24,Stewart,British,36.0
+25,Tyrrell,British,82.0
+26,Lola,British,19.0
+27,Ligier,French,66.0
+28,Forti,Italian,0.0
+29,Footwork,British,9.0
+30,Pacific,British,0.0
+31,Simtek,British,0.0
+32,Team Lotus,British,92.0
+33,Larrousse,French,11.0
+34,Brabham,British,72.0
+35,Dallara,Italian,8.0
+36,Fondmetal,Italian,0.0
+37,March,British,48.0
+39,AGS,French,1.0
+40,Lambo,Italian,0.0
+41,Leyton House,British,7.0
+42,Coloni,Italian,0.0
+44,Euro Brun,Italian,0.0
+45,Osella,Italian,3.0
+46,Onyx,British,6.0
+47,Life,Italian,0.0
+48,Rial,German,3.0
+49,Zakspeed,German,2.0
+50,RAM,British,0.0
+51,Alfa Romeo,Swiss,57.0
+52,Spirit,British,0.0
+53,Toleman,British,16.0
+54,ATS,Italian,4.0
+55,Theodore,Hong Kong,1.0
+56,Fittipaldi,Brazilian,17.0
+57,Ensign,British,10.0
+58,Shadow,British,23.0
+59,Wolf,Canadian,55.0
+60,Merzario,Italian,0.0
+61,Kauhsen,German,0.0
+62,Rebaque,Mexican,0.0
+63,Surtees,British,18.0
+64,Hesketh,British,33.0
+65,Martini,French,0.0
+66,BRM,British,45.0
+67,Penske,American,20.0
+68,LEC,British,0.0
+69,McGuire,Australian,0.0
+70,Boro,Dutch,0.0
+71,Apollon,Swiss,0.0
+72,Kojima,Japanese,0.0
+73,Parnelli,American,5.0
+74,Maki,Japanese,0.0
+75,Embassy Hill,British,3.0
+76,Lyncar,British,0.0
+77,Trojan,British,0.0
+78,Amon,New Zealander,0.0
+79,Token,British,0.0
+80,Iso Marlboro,British,4.0
+81,Tecno,Italian,1.0
+82,Matra,French,23.0
+83,Politoys,British,0.0
+84,Connew,British,0.0
+85,Bellasi,Swiss,0.0
+86,De Tomaso,Italian,0.0
+87,Cooper,British,31.0
+89,LDS,South African,0.0
+90,Protos,British,0.0
+91,Shannon,British,0.0
+92,Scirocco,British,0.0
+93,RE,Rhodesian,0.0
+94,BRP,British,6.0
+95,Porsche,German,22.0
+96,Derrington,British,0.0
+97,Gilby,British,0.0
+98,Stebro,Canadian,0.0
+99,Emeryson,British,0.0
+100,ENB,Belgian,0.0
+101,JBW,British,0.0
+103,MBM,Swiss,0.0
+104,Behra-Porsche,Italian,0.0
+105,Maserati,Italian,6.0
+106,Scarab,American,0.0
+113,Kurtis Kraft,American,0.0
+117,Aston Martin,British,196.0
+118,Vanwall,British,48.0
+123,Fry,British,0.0
+124,Tec-Mec,Italian,0.0
+125,Connaught,British,0.0
+127,OSCA,Italian,0.0
+131,Mercedes,German,765.0
+164,HRT,Spanish,0.0
+166,Virgin,British,0.0
+167,Cooper-Maserati,British,30.0
+168,Cooper-OSCA,British,0.0
+169,Cooper-Borgward,British,0.0
+170,Cooper-Climax,British,48.0
+171,Cooper-Castellotti,British,3.0
+172,Lotus-Climax,British,54.0
+173,Lotus-Maserati,British,0.0
+174,De Tomaso-Osca,Italian,0.0
+175,De Tomaso-Alfa Romeo,Italian,0.0
+176,Lotus-BRM,British,13.0
+177,Lotus-Borgward,British,0.0
+178,Cooper-Alfa Romeo,British,0.0
+179,De Tomaso-Ferrari,Italian,0.0
+180,Lotus-Ford,British,62.0
+181,Brabham-BRM,British,7.0
+182,Brabham-Ford,British,49.0
+183,Brabham-Climax,British,30.0
+184,LDS-Climax,South African,0.0
+185,LDS-Alfa Romeo,South African,0.0
+186,Cooper-Ford,British,0.0
+187,McLaren-Ford,British,49.0
+188,McLaren-Serenissima,British,1.0
+189,Eagle-Climax,American,4.0
+190,Eagle-Weslake,American,13.0
+191,Brabham-Repco,British,63.0
+192,Cooper-Ferrari,British,0.0
+193,Cooper-ATS,British,0.0
+194,McLaren-BRM,British,3.0
+195,Cooper-BRM,British,14.0
+196,Matra-Ford,French,66.0
+197,BRM-Ford,British,0.0
+198,McLaren-Alfa Romeo,British,0.0
+199,March-Alfa Romeo,British,0.0
+200,March-Ford,British,33.0
+201,Lotus-Pratt &amp; Whitney,British,0.0
+202,Shadow-Ford,British,9.5
+203,Shadow-Matra,British,0.0
+204,Brabham-Alfa Romeo,British,9.0
+205,Lotus,Malaysian,0.0
+206,Marussia,Russian,2.0
+207,Caterham,Malaysian,0.0
+208,Lotus F1,British,315.0
+209,Manor Marussia,British,1.0
+210,Haas F1 Team,American,93.0
+211,Racing Point,British,195.0
+213,AlphaTauri,Italian,142.0
+214,Alpine F1 Team,French,173.0
