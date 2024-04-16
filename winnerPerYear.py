@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 
+# function to write a file 'name' from a dataFram df.
 def write(name, df) :
     df.to_csv(name, index = False)
 
@@ -14,8 +15,8 @@ def write(name, df) :
 ''' this portion of the code gets the winning constructorId each year and their point value '''
 
 # Read the CSV files for standings and races
-constructor_standings = pd.read_csv('constructor_standings.csv')
-races = pd.read_csv('races.csv')
+constructor_standings = pd.read_csv('./data/constructor_standings.csv')
+races = pd.read_csv('./data/races.csv')
 
 # Merge based on race id
 merged_df = pd.merge(constructor_standings, races, on='raceId')
@@ -44,7 +45,7 @@ winners = max_points
 ''' now, we could be done... however, the "constructor_standings" file does not contain the constructor names. so, to see more details
     about them, we need to merge one more time.'''
 # get the dataFrame of all constructors
-constructors = pd.read_csv('constructors.csv')
+constructors = pd.read_csv('./data/constructors.csv')
 
 # merge with winners by id
 merged = pd.merge(constructors, winners, on='constructorId')
