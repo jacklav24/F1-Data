@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 import numpy as np
 from graph import line_graph
+from all_constructors import getAllConstructorResults
 
 # function to write a file 'name' from a dataFram df.
 def write(name, df) :
@@ -15,24 +16,9 @@ def write(name, df) :
 
 
 
-''' this portion of the code gets the winning constructorId each year and their point value '''
 
-# Read the CSV files for standings and races
-constructor_standings = pd.read_csv('./data/constructor_standings.csv')
-races = pd.read_csv('./data/races.csv')
 
-# Merge based on race id
-merged_df = pd.merge(constructor_standings, races, on='raceId')
-
-# Group by 'year', 'constructorId' then find the maximum points for each group
-max_points = merged_df.groupby(['year', 'constructorId'])['points'].max().reset_index()
-
-''' after this line, we have stored every single end-of-year point value for each constructor to a row. but we still have duplicate years.
-    now, we sort them by ascending points... thus, when we later remove duplicates of years, we will be left with only the first occuring 
-    values... that is, the point value of the winners that year.'''
-
-max_points.sort_values(by='points', ascending=False, inplace=True)
-
+max_points = getAllConstructorResults()
 # Remove duplicate years so we're left with only the max points each year
 max_points = max_points.drop_duplicates('year')
 
@@ -80,7 +66,24 @@ for_printing = final.sort_values(by='year', ascending= True)
 '''uncomment this to create the file once.'''
 #write('result_files/constructors_championship_winners.csv', final)
 # Finally, print the df without the index!
-print(for_printing.to_string(index = False))
+print(for_printing.to_string(index = True))
 
+''''''
+#filtered = final[final['year'] > 2000]
+frame = final.sort_values('year')
+x = frame['year']
+y = frame['points_float']
+plt.plot(x, y, color = 'blue', ls = '-', marker = '.')
 
-line_graph(final, 'year', 'points_float', True)
+ax = plt.gca()
+ax.set_xlim([1958, 2024])
+ax.set_ylim([0, 800])
+plt.xticks(np.arange(min(x), max(x)+1, 10))
+plt.yticks(np.arange(min(y), max(y)+50, 25.0))
+
+plt.title("F1 Constructor's Champ Results")
+plt.xlabel("Year")
+plt.ylabel("Final Points Total")
+plt.show()
+
+#line_graph(final, 'year', 'points_float', True)

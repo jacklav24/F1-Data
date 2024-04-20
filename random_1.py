@@ -17,3 +17,4 @@ def highest_scoring_year() :
     sorted = max_points_df.sort_values(by='highest_season_points', ascending=False)
     
     return sorted
+
