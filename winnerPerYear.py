@@ -48,8 +48,8 @@ final.columns = ['year', 'points', 'team', 'nation']
 
 # apply styling to points. if ends in .0, drop the decimal
 final.insert(2, "points_float", final['points'].astype(float), True)
-final['points'] = final['points'].apply(lambda x: str(int(x)) if x.is_integer() else "{:.1f}".format(x))
-final['year'] = final['year'].astype(int)
+final.loc[:, 'points'] = final['points'].apply(lambda x: str(int(x)) if x.is_integer() else "{:.1f}".format(x))
+final.loc[:, 'year'] = final['year'].astype(int)
 
 # getting a dataframe for output ignoring the float points value.
 for_printing = final[['year', 'points', 'team', 'nation']]
@@ -86,4 +86,3 @@ plt.xlabel("Year")
 plt.ylabel("Final Points Total")
 plt.show()
 
-#line_graph(final, 'year', 'points_float', True)

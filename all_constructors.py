@@ -113,3 +113,4 @@ y_cols = pivot_df.columns
 #graph all of the results from the specified years
 graphAll(pivot_df, y_cols, 2010, 2023)
 #pivot_df = pivot_df.sort_values(by="constructorId")
+
