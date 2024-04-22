@@ -11,6 +11,9 @@ I've utilized csv file reading and writing, merging, sorting by values, columns,
 
 Tasks achieved:
 
+in graph.py :
+- graph a dataframe using 
+
 in random_1.py :
 - Finding the highest scoring year for each constructor by merging race results with constructors
 
