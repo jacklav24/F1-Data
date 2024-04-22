@@ -14,10 +14,10 @@ Tasks achieved:
 in random_1.py :
 - Finding the highest scoring year for each constructor by merging race results with constructors
 
-in winnerPerYear.py :
+in winner_per_year.py :
 - written a script to find not only the winner each year but their point total using 3 different csv files. the option to write to a csv file is present as well.
 
-in all_constructors.py:
+in constructors.py:
 - created a way to view the results of all constructors in either a) all years of f1 competition, or b) a year range inputted by the user. This uses 
 all of the skills mentioned so far, and incorporates some more (relatively speaking) intense pandas and m atplotlib manipulation.
 
