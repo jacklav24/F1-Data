@@ -2,11 +2,11 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 import numpy as np
 import pandas as pd
-from constructorMapping import getConstructorMapping
+import constructorMapping as cm
 
 
 
-def getAllConstructorResults() :
+def get_all_constructors_results() :
     ''' this portion of the code gets the winning constructorId each year and their point value '''
 
     # Read the CSV files for standings and races
@@ -14,10 +14,10 @@ def getAllConstructorResults() :
     races = pd.read_csv('./data/races.csv')
 
     # Merge based on race id
-    merged_df = pd.merge(constructor_standings, races, on='raceId')
+    merged_frame = pd.merge(constructor_standings, races, on='raceId')
 
     # Group by 'year', 'constructorId' then find the maximum points for each group
-    max_points = merged_df.groupby(['year', 'constructorId'])['points'].max().reset_index()
+    max_points = merged_frame.groupby(['year', 'constructorId'])['points'].max().reset_index()
 
     ''' now we can sort by points!'''
 
@@ -26,13 +26,11 @@ def getAllConstructorResults() :
     return max_points
 
 
-def get_column_names_excluding(df, excluded_column):
-    return [col for col in df.columns if col != excluded_column]
+def get_column_names_excluding(frame, excluded_column):
+    return [col for col in frame.columns if col != excluded_column]
 
-def graphAllOne(frame, y_cols):
-    graphAll(frame, y_cols, 1958, 2023)
 
-def graphAll(frame, y_cols, beg_year, end_year):
+def graph_data(frame, y_cols, beg_year, end_year):
 
     plt.style.use('ggplot')
     '''Now let's create a graph!'''
@@ -76,20 +74,26 @@ def graphAll(frame, y_cols, beg_year, end_year):
 
     plt.show()
     
+def selected_teams_with_range(list, frame, beg_year, end_year) :
+    result = frame[list]
+    print(result)
+    all_teams_no_range(result)
 
-def with_range(beg_year, end_year) :
+    
 
-    allResults = getAllConstructorResults()
+def all_teams_with_range(frame, beg_year, end_year) :
+
+    allResults = get_all_constructors_results()
 
     #this rotates allResults so that the column names are the constructorIds, and the rows are the results each year
-    pivot_df = allResults.pivot_table(index='year', columns='constructorId', values='points')
+    pivoted_results = allResults.pivot_table(index='year', columns='constructorId', values='points')
     #now, we switch the constructor id's with the names.
-    pivot_df = getConstructorMapping(pivot_df)
+    pivoted_results = cm.get_constructor_mapping(pivoted_results)
     #get the column names
-    y_cols = pivot_df.columns
+    y_cols = pivoted_results.columns
     #graph all of the results from the specified years
-    graphAll(pivot_df, y_cols, beg_year, end_year)
+    graph_data(pivoted_results, y_cols, beg_year, end_year)
     #pivot_df = pivot_df.sort_values(by="constructorId")
 
-def no_range() :
-    with_range(1958, 2023)
+def all_teams_no_range(frame) :
+    all_teams_with_range(frame, 1958, 2023)

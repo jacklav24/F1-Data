@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 import numpy as np
 from graph import line_graph
-from constructors import getAllConstructorResults
+from constructors import get_all_constructors_results
 
 # function to write a file 'name' from a dataFram df.
 def write(name, df) :
@@ -13,7 +13,7 @@ def get_winner_per_year() :
     ''' Here, we will read from 3 data sets to get the constructor's champion for each year, and their points value.
         Because of how the data is set up, it proves to be a little difficult. Or at least more than you'd think. follow along!'''
     # First, read the CSV files for constructor
-    max_points = getAllConstructorResults()
+    max_points = get_all_constructors_results()
     # Remove duplicate years so we're left with only the max points each year
     max_points = max_points.drop_duplicates('year')
 
@@ -43,7 +43,7 @@ def get_winner_per_year() :
 
     # apply styling to points. if ends in .0, drop the decimal
     final.insert(2, "points_float", final['points'].astype(float), True)
-    final.loc[:, 'points'] = final['points'].apply(lambda x: str(int(x)) if x.is_integer() else "{:.1f}".format(x))
+    
     final.loc[:, 'year'] = final['year'].astype(int)
 
     # getting a dataframe for output ignoring the float points value.

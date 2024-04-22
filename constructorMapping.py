@@ -1,5 +1,7 @@
-def getConstructorMapping(pivot_df) :
-    pivot_df.rename(columns= {1: 'McLaren',
+
+
+def get_constructor_mapping(frame) :
+     result = frame.rename(columns= {1: 'McLaren',
         2: 'BMW Sauber',
         3: 'Williams',
         4: 'Renault',
@@ -209,9 +211,12 @@ def getConstructorMapping(pivot_df) :
         210: 'Haas F1 Team',
         211: 'Racing Point',
         213: 'AlphaTauri',
-        214: 'Alpine F1 Team' }, inplace = True)
-    return pivot_df
+        214: 'Alpine F1 Team' }
+    , inplace = False)
+     return result
 
 
 
+def get_constructor_names(frame) :
+    return list(get_constructor_mapping(frame).values)
     

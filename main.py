@@ -23,19 +23,22 @@ def main() :
     print("welcome to the F1 data parser. I've pulled lots of data from Kaggle, and have added some functionality. \n"
       + "You can : \n1. See all constructors results graphed for every year in F1\n"
       + "2. See the constructors results over a certain time frame\n"
-      + "3. See the winner each year, and their points scored, in the console\n")
+      + "3. Get selected constructors results\n"
+      + "4. See the winner each year, and their points scored, in the console")
     
-    choice = iv.get_var_from_options(int, [1,2,3,4],"Enter 1, 2, or 3 to select your choice: ", "enter an int 1, 2, or 3: ")
+    choice = iv.get_var_from_options(int, [1,2,3,4],"Enter 1, 2, 3, or 4 to select your choice: ", "enter an int 1, 2, 3, 4: ")
 
     if choice == 1 :
-        const.no_range()
+        const.all_teams_no_range()
     elif choice == 2 :
-        year_list = [year for year in range(1958, 2023)]
+        year_list = [year for year in range(1958, 2024)]
         years = get_year_range(year_list)
-       
-        const.with_range(years[0],years[1])
+        const.all_teams_with_range(years[0], years[1])
     elif choice == 3 :
-        print('not yet!')
+        allResults = const.get_all_constructors_results()
+        teams_list = cm.get_constructor_names(allResults)
+        iv.get_string_list_from_options(teams_list, '-999','Enter a constructor name you\'d like to see results from. (Enter -999 to stop adding teams): ', 'Try again! Enter a valid team name. ')
+        const.selected_teams_with_range()
     else :
         wpy.get_winner_per_year()
         
