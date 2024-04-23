@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 
 def highest_scoring_year() :
-    constructors_df = pd.read_csv('constructors.csv')
-    constructor_points_df = pd.read_csv('constructor_standings.csv')
+    constructors_df = pd.read_csv('./data/constructors.csv')
+    constructor_points_df = pd.read_csv('./data/constructor_standings.csv')
 
     # join on the constructorId column
     merged_df = pd.merge(constructors_df, constructor_points_df, on='constructorId')
@@ -18,3 +18,5 @@ def highest_scoring_year() :
     
     return sorted
 
+
+print(highest_scoring_year())

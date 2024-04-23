@@ -81,3 +81,5 @@ def get_winner_per_year() :
     plt.ylabel("Final Points Total")
     plt.show()
 
+
+get_winner_per_year()

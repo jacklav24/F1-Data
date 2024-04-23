@@ -4,7 +4,8 @@ import numpy as np
 import pandas as pd
 import constructorMapping as cm
 
-
+def write(name, df) :
+    df.to_csv(name, index = False)
 
 def get_all_constructors_results() :
     ''' this portion of the code gets the winning constructorId each year and their point value '''
@@ -81,7 +82,7 @@ def selected_teams_with_range(list, frame, beg_year, end_year) :
 
     
 
-def all_teams_with_range(frame, beg_year, end_year) :
+def all_teams_with_range(beg_year, end_year) :
 
     allResults = get_all_constructors_results()
 
@@ -89,11 +90,12 @@ def all_teams_with_range(frame, beg_year, end_year) :
     pivoted_results = allResults.pivot_table(index='year', columns='constructorId', values='points')
     #now, we switch the constructor id's with the names.
     pivoted_results = cm.get_constructor_mapping(pivoted_results)
+    write("./result_files/all_constructors_results.csv" ,pivoted_results)
     #get the column names
     y_cols = pivoted_results.columns
     #graph all of the results from the specified years
     graph_data(pivoted_results, y_cols, beg_year, end_year)
     #pivot_df = pivot_df.sort_values(by="constructorId")
 
-def all_teams_no_range(frame) :
-    all_teams_with_range(frame, 1958, 2023)
+def all_teams_no_range() :
+    all_teams_with_range(1958, 2023)
