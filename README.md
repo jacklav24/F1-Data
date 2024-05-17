@@ -30,3 +30,7 @@ i hope to learn some about data visualiztion and get to graphing this stuff.. ho
 
 update 1:  I've gotten more familiar with matplotlib, and pandas in general. I could be much more efficient in general with my code.
            Lots more to set up.
+
+update 2: added a main method and user input.
+
+NEXT STEP: I want to explore adding parameters to the data- such as only including/graphing data if a team has scored a minimum amount of points over a timespan. I'm also exploring grabbing only specific teams data right now. With school ending I'll be able to spend more time on this!
