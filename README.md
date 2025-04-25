@@ -1,4 +1,6 @@
 # F1-Data
+## I haven't been active on this for a while. But, I love F1, so I'd like to come back to it at some point and really do some real analysis on it. For now, it serves as a comparison to my growth
+
 A quick project messing with F1 data and python and pandas.
 
 SO FAR... 
